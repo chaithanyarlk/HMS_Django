@@ -9,14 +9,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #topnav {
-  background-color: #7f5a83;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 53%, rgba(0,212,255,1) 100%);
   box-shadow: 0 8px 6px -6px rgb(37, 34, 68);
 }
 
 #topnav .nav-title{
   font-size:x-large;
-  color: darkorange;
+  color: orangered;
   font-family: 'Bree Serif', serif;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5 {
 
 #topnav .nav-icon {
   font-size: 4vh;
-  color: aliceblue;
+  color: grey;
 }
 
 .sidenav {
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .sidenav a:hover, .sidenav a.active {
-  color: #b766ec;
+  color: #46fced;
 }
 
 .sidenav::-webkit-scrollbar {
@@ -63,11 +63,13 @@ h1, h2, h3, h4, h5 {
   height: 4px;
 }   
 .sidenav::-webkit-scrollbar-track {
-  background: #666;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 53%, rgba(0,212,255,1) 100%);
 }
  
 .sidenav::-webkit-scrollbar-thumb {
-  background: #99979b; 
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 53%, rgba(0,212,255,1) 100%);
 }
 
 .main-container {

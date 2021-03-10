@@ -15,8 +15,8 @@ body{
 }
 
 .link-item {
-    background-color: rgba(0, 0, 0, 0.719);
-    color: rgba(255, 228, 196, 0.753);
+    background: skyblue;    
+    color: white;
     padding: 15px;
     border: none;
     border-radius: 15px;
@@ -25,7 +25,7 @@ body{
 
 .link-item:hover {
     box-shadow: 0 3px 10px 1px rgba(121, 121, 121, 0.658) ;
-    background-color: rgba(216, 167, 106, 0.753);
+    background-color: goldenrod;
     color: black;
     text-decoration: none;
 
@@ -34,4 +34,26 @@ body{
 .links a{
     text-decoration: none;
     color: inherit;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+.index-container{
+    margin-top: 50%!important;
+}
+@media screen and (min-width: 992px) {
+    .index-container {
+      margin-top: 38%!important;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .index-container {
+      margin-top: 30%!important;
+    }
 }
