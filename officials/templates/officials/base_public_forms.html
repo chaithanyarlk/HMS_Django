@@ -27,8 +27,8 @@
       <a href="{% if request.user.is_authenticated %}{{ request.user.home_url }}{% else %}{% url 'institute:index' %}{% endif %}">
         <span class="fa fa-home nav-icon"></span>
       </a>
-      <span class="d-none d-md-block nav-title"><img src="{% static 'officials/logo_small.png' %}" alt="Institute Logo" class="mr-3">NIT Andhra Pradesh - Hostel Management System</span>
-      <span class="d-block d-md-none nav-title"><img src="{% static 'officials/logo_small.png' %}" alt="Institute Logo" class="mr-2">NIT AP - Hostels</span>
+      <span class="d-none d-md-block nav-title"><img src="{% static 'officials/logo_small.png' %}" alt="Institute Logo" class="mr-3">Hostel Management System</span>
+      <span class="d-block d-md-none nav-title"><img src="{% static 'officials/logo_small.png' %}" alt="Institute Logo" class="mr-2">Hostel Management System</span>
       <span></span>
     </div>
   </nav>
