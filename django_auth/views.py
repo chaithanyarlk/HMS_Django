@@ -36,16 +36,16 @@ class SignUpView(CreateView):
     form_class = SignUpForm
 
     def get_success_url(self):
-        return reverse('django_auth:signup')
+        return reverse('django_auth:account_activation_sent')
 
     def form_valid(self, form):
-        form.instance.email_confirmed = True # Removing email verification
+        form.instance.email_confirmed = False
 
         response = super().form_valid(form)
         
         # After save, send confirmation email
         user = form.instance
-        # user.send_activation_email(self.request)
+        user.send_activation_email(self.request)
         
         # After save assign to entity!
         is_student = form.cleaned_data.get('is_student')
